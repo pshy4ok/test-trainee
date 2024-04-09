@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Contact Manager</h1>
+    <div class="filter">
+        <input type="text" id="filterInput" placeholder="Filter...">
+        <button id="filterBtn">Filter</button>
+        <button id="clearFilterBtn">Clear Filter</button>
+        <button id="sortByNameBtn">Sort by Name</button>
+        <button id="sortByDateOfBirthBtn">Sort by Date of Birth</button>
+        <button id="sortBySalaryBtn">Sort by Salary</button>
+    </div>
+    <div class="upload">
+        <input type="file" id="csvInput" accept=".csv">
+        <button id="uploadCsvBtn">Upload CSV</button>
+    </div>
+    <table id="dataTable"></table>
+    <form id="editForm">
+        <input type="hidden" id="editId">
+        <div class="form-group">
+            <label for="editName">Name:</label>
+            <input type="text" id="editName">
+        </div>
+        <div class="form-group">
+            <label for="editDateOfBirth">Date of Birth:</label>
+            <input type="date" id="editDateOfBirth">
+        </div>
+        <div class="form-group">
+            <label for="editMarried">Married:</label>
+            <input type="checkbox" id="editMarried">
+        </div>
+        <div class="form-group">
+            <label for="editPhone">Phone:</label>
+            <input type="text" id="editPhone">
+        </div>
+        <div class="form-group">
+            <label for="editSalary">Salary:</label>
+            <input type="number" id="editSalary">
+        </div>
+        <button type="button" id="saveEditBtn">Save</button>
+        <button type="button" id="cancelEditBtn">Cancel</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
